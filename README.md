@@ -15,7 +15,7 @@ options: {
       name: 'Squeeze',
       args: [{ log: '*', error: '*', request: '*' }]
     }, {
-      module: require('good-rollbar'),
+      module: require('good-hapi-rollbar'),
       args: [{
         accessToken: process.env.ROLLBAR_API_TOKEN,
         environment: process.env.ENVIRONMENT,
